@@ -1,27 +1,7 @@
-# AngularQueryDataIssue
+# How to reproduce the issue
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1.  Open the browser's console
+2.  Click the "Search" button
+3.  You will see a message with the start and end date after 2 seconds
+4.  Change the date and click the "Search" button again, you should see the message for that date appear as well
+5.  Now go back to the date you started with and click "Search" again, you will see the query for that date become active again but this time no message is being logged to the console and the UI is still showing the data for the old date
